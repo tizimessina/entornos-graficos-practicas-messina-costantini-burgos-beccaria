@@ -7,56 +7,64 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <style>
-    .bloque { padding: 25px; margin-bottom: 15px; color: #fff; text-align: center; border-radius: 4px; }
-    .sidebar { min-height: 100%; }
+    .bloque {
+      padding: 25px;
+      margin-bottom: 15px;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+    }
+    .sidebar { min-height: 300px; }
   </style>
 </head>
 <body>
 
   <div class="container mt-4">
 
-    <!-- Barra superior -->
+    <!-- Barra superior violeta: siempre 100% -->
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-12">
         <div class="bloque" style="background-color:#9b6fac">Header</div>
       </div>
     </div>
 
     <div class="row">
 
-      <!-- Sidebar: tamaño 3 -->
-      <div class="col-sm-3">
+      <!-- Sidebar: tamaño 3 en md+, 100% en sm y menores -->
+      <div class="col-md-3">
         <div class="bloque sidebar" style="background-color:#f2d9c9; color:#333;">
           Sidebar
         </div>
       </div>
 
-      <!-- Contenido principal: tamaño 9 -->
-      <div class="col-sm-9">
+      <!-- Contenido principal: tamaño 9 en md+, 100% en sm y menores -->
+      <div class="col-md-9">
 
-        <!-- Barra verde -->
+        <!-- Barra verde: siempre 100% del contenedor -->
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-12">
             <div class="bloque" style="background-color:#6cc48b">Barra verde</div>
           </div>
         </div>
 
-        <!-- 6 rectángulos, tamaño 3 cada uno (2 filas de 3) -->
+        <!-- 6 rectángulos: 3 por fila en md+, 2 por fila en sm y menores -->
         <div class="row">
-          <div class="col-sm-3"><div class="bloque" style="background-color:#a99aa3">1</div></div>
-          <div class="col-sm-3"><div class="bloque" style="background-color:#a99aa3">2</div></div>
-          <div class="col-sm-3"><div class="bloque" style="background-color:#a99aa3">3</div></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3"><div class="bloque" style="background-color:#a99aa3">4</div></div>
-          <div class="col-sm-3"><div class="bloque" style="background-color:#a99aa3">5</div></div>
-          <div class="col-sm-3"><div class="bloque" style="background-color:#a99aa3">6</div></div>
+          <div class="col-md-4 col-6"><div class="bloque" style="background-color:#a99aa3">1</div></div>
+          <div class="col-md-4 col-6"><div class="bloque" style="background-color:#a99aa3">2</div></div>
+          <div class="col-md-4 col-6"><div class="bloque" style="background-color:#a99aa3">3</div></div>
+          <div class="col-md-4 col-6"><div class="bloque" style="background-color:#a99aa3">4</div></div>
+          <div class="col-md-4 col-6"><div class="bloque" style="background-color:#a99aa3">5</div></div>
+          <div class="col-md-4 col-6"><div class="bloque" style="background-color:#a99aa3">6</div></div>
         </div>
 
-        <!-- 2 rectángulos celestes: chico (3) y grande (6) -->
+        <!-- 2 rectángulos celestes: 3 y 6 en md+, mitad y mitad en sm y menores -->
         <div class="row">
-          <div class="col-sm-3"><div class="bloque" style="background-color:#7ea6cf">Celeste chico</div></div>
-          <div class="col-sm-6"><div class="bloque" style="background-color:#7ea6cf">Celeste grande</div></div>
+          <div class="col-md-4 col-6">
+            <div class="bloque" style="background-color:#7ea6cf; min-height:150px;">Celeste chico</div>
+          </div>
+          <div class="col-md-8 col-6">
+            <div class="bloque" style="background-color:#7ea6cf; min-height:150px;">Celeste grande</div>
+          </div>
         </div>
 
       </div>
