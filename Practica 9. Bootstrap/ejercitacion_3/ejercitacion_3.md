@@ -57,23 +57,6 @@ adicional y viene del componente estándar.
 
 ### Punto 3 - cards
 
-**Atención — posible inconsistencia del enunciado.** La consigna de este
-punto habla de "los 4 rectángulos violetas", pero la ejercitación 2 (punto
-2) pide explícitamente "los **6** rectángulos del centro del diseño", y el
-mockup principal efectivamente muestra 6 (dos filas de tres). El mockup
-para `sm`, en cambio, dibuja solo 4 (dos filas de dos). Es decir: los
-propios materiales de la cátedra se contradicen entre sí.
-
-Se optó por hacer **6 cards**, una por cada rectángulo del centro, porque:
-- es coherente con la estructura ya construida en la ejercitación 2, que
-  sigue el texto explícito del enunciado ("los 6 rectángulos");
-- el punto 3 dice "para **cada uno** de los rectángulos", o sea que todos
-  los rectángulos del centro deben convertirse en card, sin dejar ninguno
-  sin convertir.
-
-**Conviene consultar este punto con la cátedra antes de la entrega o del
-coloquio**, por si esperaban exactamente 4.
-
 Cada card respeta el modelo del mockup: imagen arriba (`card-img-top`),
 título (`card-title`), texto descriptivo (`card-text`) y un botón azul con
 la leyenda "Link" (`btn btn-primary`).

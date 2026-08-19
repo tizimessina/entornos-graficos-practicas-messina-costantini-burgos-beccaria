@@ -47,7 +47,3 @@ Un tercer problema, menos visible pero más serio en un sitio con tráfico, es q
 Por último, la etiqueta `<font>` empleada para dar formato al texto está obsoleta desde HTML 4.01 y fue eliminada del estándar en HTML5. Corresponde reemplazarla por un elemento genérico con estilos aplicados desde CSS, en línea con la separación entre estructura y presentación trabajada en la práctica anterior.
 
 El archivo `contador_mejorado.php` incluido en esta carpeta aplica estas cuatro correcciones: crea el archivo si no existe, lo abre una única vez en modo `r+`, lo protege con `flock()` y reemplaza `<font>` por un elemento con estilo. Se lo puede ejecutar y comparar con el original.
-
-## Cómo probarlo
-
-Hay que abrir `visitas.php` desde el servidor y recargar la página varias veces; el número debe incrementarse de a uno en cada recarga. Las instrucciones específicas para XAMPP, incluida la cuestión de los permisos en Windows, están en el README de la práctica.

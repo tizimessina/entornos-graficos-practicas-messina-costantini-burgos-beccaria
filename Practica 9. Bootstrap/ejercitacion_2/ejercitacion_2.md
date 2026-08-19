@@ -82,8 +82,3 @@ y `col-md-8 col-6` respectivamente, con el mismo criterio.
 
 El corte se hace en `md` (y no en `sm`) por la misma razón explicada en el
 punto 1: para que el cambio de diseño abarque `sm` y todo lo más chico.
-
-**Nota sobre colores:** son arbitrarios, elegidos solo para diferenciar
-visualmente cada bloque (la consigna no especifica colores exactos, aunque
-los mockups de la cátedra usan tonos violeta, verde, gris/mauve y celeste,
-que se intentaron respetar de forma aproximada).
