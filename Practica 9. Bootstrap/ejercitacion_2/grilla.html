@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Práctica Bootstrap - Ejercitación 2 (grilla)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    .caja { padding: 20px; margin-bottom: 10px; color: #fff; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+
+    <!-- Fila 1: siempre 1 columna al 100% -->
+    <div class="row">
+      <div class="col-12">
+        <div class="caja" style="background-color:#9b6fac">Fila 1 - 100%</div>
+      </div>
+    </div>
+
+    <!-- Fila 2: 2 columnas al 50% cada una, salvo en sm y menores
+         que se apilan en 2 filas de 100% (usando col-md-6) -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="caja" style="background-color:#f2d9c9">Columna 1</div>
+      </div>
+      <div class="col-md-6">
+        <div class="caja" style="background-color:#e0a9a3">Columna 2</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
